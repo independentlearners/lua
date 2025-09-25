@@ -73,12 +73,12 @@ while true do
       os.execute('bash -c "cd ~ && pwd"') -- Jika tidak kembali ke home, coba aktifkan ini!
       print(T.pesan7
       .. " "
+      -- .. lfs.currentdir()
       .. a
       .. " "
       .. T.henti
       .. "\n"
-      .. T.pesan4
-      -- .. lfs.currentdir())
+      .. T.pesan4)
       break
     end
   end
