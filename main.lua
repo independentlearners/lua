@@ -1,5 +1,7 @@
 -- Entry point program
 -- Memanggil resource teks
+local lfs = require("lfs")
+lfs.chdir(os.getenv("HOME"))   -- HOME = variabel lingkungan
 local T = require("lua.teks.teks")
 local tampilkanVariabel = require("lua.daftar.daftar")
 local kal = require("lua.kalkulator.kalkulator")
@@ -68,13 +70,15 @@ while true do
       print(T.pesan7, "enter:", T.lanjut)
     else
       os.execute("clear")
-      os.execute("cd ~")
+      -- os.execute('bash -c "cd ~ && pwd"') -- Jika tidak kembali ke home, coba aktifkan ini!
       print(T.pesan7
       .. " "
       .. a
       .. " "
-      .. T.henti)
-      print(T.pesan4)
+      .. T.henti
+      .. "\n"
+      .. T.pesan4
+      .. lfs.currentdir())
       break
     end
   end
