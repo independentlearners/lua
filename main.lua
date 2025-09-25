@@ -68,6 +68,7 @@ while true do
       print(T.pesan7, "enter:", T.lanjut)
     else
       os.execute("clear")
+      os.execute("cd ~")
       print(T.pesan7
       .. " "
       .. a
