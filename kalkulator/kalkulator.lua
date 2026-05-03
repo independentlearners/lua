@@ -1,4 +1,4 @@
--- KALKULATOR
+-- Program Khusu KALKULATOR
 -- Tujuan :
 -- 1. Program meminta input operator dan angka
 -- 2. Setiap pemilihan operator menyertakan pesan konfirmasi
