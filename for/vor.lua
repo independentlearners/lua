@@ -1,4 +1,5 @@
 local t = require("lua.teks.teks")
+local clear = require("lua.behavior.clear")
 
 print(t.halo, "perulangan for\n", t.pesan1)
 local i = tonumber(io.read())
@@ -13,7 +14,7 @@ while true do
 		if i == 1 and x > 1 then
 			for i = 1, x do
 				print(t.per, x, "\n", t.vor)
-				os.execute("clear")
+				clear()
 			end
 		elseif i >= 1 and x > 1 then
 			print(t.salah)

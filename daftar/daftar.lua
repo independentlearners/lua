@@ -1,9 +1,5 @@
 local t = require("lua.teks.teks")
 
-local function tab(fn, arg)
-	fn(arg)
-end
-
 local function tabel(d)
 	print(t.halo .. t.da)
 	for k, v in pairs(d) do

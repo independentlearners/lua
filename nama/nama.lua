@@ -1,5 +1,5 @@
 local v = require("lua.teks.teks")
-local clear = require("lua.behavior.behavior")
+local clear = require("lua.behavior.clear")
 
 -- Array dengan indeks numerik (1-based indexing)
 local function nm()

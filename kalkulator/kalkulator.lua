@@ -5,7 +5,7 @@
 -- 3. Jika input bukan angka, program keluar
 -- 4. Jika pembagian dengan nol, program keluar
 -- 5. Setiap sesi input dibersihkan layarnya agar rapi
-local clear = require("lua.behavior.behavior")
+local clear = require("lua.behavior.clear")
 local T = require("lua.teks.teks")
 -- ========================
 -- AWAL PROGRAM

@@ -1,5 +1,4 @@
 local T = require("lua.teks.teks")
-local clear = require("lua.behavior.behavior")
 
 -- Fungsi ini dibuat khsusus menambahkan dirinya sendiri
 local function buatPenambah(jumlahTambah)

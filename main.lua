@@ -2,7 +2,7 @@
 -- Memanggil resource teks
 --local lfs = require("lfs")
 --lfs.chdir(os.getenv("HOME"))   -- HOME = variabel lingkungan
-local clear = require("lua.behavior.behavior")
+local clear = require("lua.behavior.clear")
 local T = require("lua.teks.teks")
 local tampilkanVariabel = require("lua.daftar.daftar")
 local kal = require("lua.kalkulator.kalkulator")

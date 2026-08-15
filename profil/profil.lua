@@ -1,5 +1,5 @@
 local T = require("lua.teks.teks")
-local clear = require("lua.behavior.behavior")
+local clear = require("lua.behavior.clear")
 
 local function panggil()
 	clear()

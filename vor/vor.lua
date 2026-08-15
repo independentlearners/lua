@@ -1,5 +1,5 @@
 local t = require("lua.teks.teks")
-local clear = require("lua.behavior.behavior")
+local clear = require("lua.behavior.clear")
 
 local function vor()
 	print(t.halo .. " Pemutaran angka\n" .. t.angka1 .. t.pesan1)
