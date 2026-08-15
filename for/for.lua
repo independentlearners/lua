@@ -1,4 +1,5 @@
 local t = require("lua.teks.teks")
+local clear = require("lua.behavior.behavior")
 
 local function vor()
 	print(t.halo .. " Perulangan For\n" .. "Angka 1 untuk memulai, berikutnya untuk mengulang\n" .. t.pesan1)
@@ -8,7 +9,7 @@ local function vor()
 		print(t.pesan2)
 
 		local x = tonumber(io.read())
-		os.execute("clear")
+		clear()
 
 		if i == nil or x == nil then
 			print(t.nomor)

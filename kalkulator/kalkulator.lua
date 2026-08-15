@@ -5,6 +5,7 @@
 -- 3. Jika input bukan angka, program keluar
 -- 4. Jika pembagian dengan nol, program keluar
 -- 5. Setiap sesi input dibersihkan layarnya agar rapi
+local clear = require("lua.behavior.behavior")
 local T = require("lua.teks.teks")
 -- ========================
 -- AWAL PROGRAM
@@ -16,23 +17,23 @@ local function kalkulator()
 
 		-- Pesan konfirmasi operator
 		if opr == "+" then
-			os.execute("clear")
+			clear()
 			print(T.plus)
 			print(string.rep("-", 50))
 		elseif opr == "-" then
-			os.execute("clear")
+			clear()
 			print(T.neg)
 			print(string.rep("-", 50))
 		elseif opr == "*" then
-			os.execute("clear")
+			clear()
 			print(T.ktr)
 			print(string.rep("-", 50))
 		elseif opr == "/" then
-			os.execute("clear")
+			clear()
 			print(T.bag)
 			print(string.rep("-", 50))
 		else
-			os.execute("clear")
+			clear()
 			print(T.salah, T.pesan6)
 			break
 		end
@@ -45,7 +46,7 @@ local function kalkulator()
 
 		-- Validasi input angka
 		if i == nil or x == nil then
-			os.execute("clear")
+			clear()
 			print(T.nomor)
 			print(string.rep("-", 50))
 			break
@@ -63,7 +64,7 @@ local function kalkulator()
 			print(string.rep("-", 50))
 		elseif opr == "/" then
 			if x == 0 then
-				os.execute("clear")
+				clear()
 				print(T.pesan5, T.pesan6)
 				print(string.rep("-", 50))
 				break
@@ -77,15 +78,15 @@ local function kalkulator()
 		local y = io.read()
 
 		if y == "y" then
-			os.execute("clear")
+			clear()
 			print(T.pesan7, y, T.lanjut)
 			print(string.rep("-", 50))
 		elseif y == " " then
-			os.execute("clear")
+			clear()
 			print(T.pesan7, "spasi:", T.lanjut)
 			print(string.rep("-", 50))
 		elseif y == "" then
-			os.execute("clear")
+			clear()
 			print(T.pesan7, "enter:", T.lanjut)
 			print(string.rep("-", 50))
 		else

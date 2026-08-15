@@ -1,4 +1,5 @@
 local v = require("lua.teks.teks")
+local clear = require("lua.behavior.behavior")
 
 -- Array dengan indeks numerik (1-based indexing)
 local function nm()
@@ -16,7 +17,7 @@ local function nm()
 				-- tampilkan pilihan yang ada
 				print(v.warna, colors[x])
 			elseif x > #colors then
-				os.execute("clear")
+				clear()
 				print(v.baru)
 				local i = io.read() -- ambil string baru
 				table.insert(colors, i) -- tambahkan ke akhir array
@@ -38,7 +39,7 @@ local function nm()
 			print(v.tekan, y, "untuk keluar", v.salam)
 			break
 		else
-			os.execute("clear")
+			clear()
 			print(v.login)
 		end
 	end
